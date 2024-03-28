@@ -231,7 +231,7 @@ useEffect(() => {
 
       <div className="sloth">
 
-      <img src="images/de1.png" />
+      <img src="images/logo300.png" />
       </div>
 
 

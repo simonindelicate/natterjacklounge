@@ -28,9 +28,9 @@
 
 
 body {
-  background-color: #fffcf5;
-  background-image: url('/images/bg.png');
-  color: yellow;
+  background-color: #fefeff;
+  /* background-image: url('/images/bg.png'); 
+  color: yellow; */
   padding: 0;
   margin: 0;
   font-family: "Courier New", monospace;
@@ -96,9 +96,8 @@ margin: 50px 15px 15px;
   flex-direction: column;
 }
 .chat-window {
-  background-color: #000;
+  background-color: #fefefe;
   border: 2px solid #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   margin: 50px;
   padding: 50px;
@@ -112,11 +111,8 @@ margin: 50px 15px 15px;
   right: -20px;
   bottom: -50px;
   left: -20px;
-  border: 130px solid #000;
-  z-index: -1;
+   z-index: -1;
   border-radius: 15px;
-
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 textarea {
@@ -146,7 +142,7 @@ input {
 
   }
 .chat-window {
-  background-color: #060606;
+  background-color: #fff;
   border: 0px solid white;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
   position: relative;
@@ -199,10 +195,10 @@ input {
   width: 800px;
   max-width: 95%;
   margin: auto;
-  background-color: #fbf0e0dd;
+  background-color: #fdfdfd;
   text-align: left;
   border-radius: 18px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
 }
 
 .lavalamp {
@@ -252,9 +248,8 @@ font-family: 'Futura PT Book', cursive;
 	/*background-color: #f7ffed;
 
   background-image: url('/navbar.png')*/
-  background-color: black;
-  background-image: url('/images/navbar-image.png');
-  color:white;
+  background-color: #fefefe;
+    color:#0d0e0d;
   font-family: 'FuturaCyrillicDemi', monospace;
   text-transform: uppercase;
 
