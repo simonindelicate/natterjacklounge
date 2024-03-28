@@ -1,23 +1,34 @@
 import { Message, OpenAIModel } from "@/types";
 import { createParser, ParsedEvent, ReconnectInterval } from "eventsource-parser";
 
+
 export const OpenAIStream = async (messages: Message[]) => {
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
 
-  // Automatically capture the current date in YYYY-MM-DD format
+// Automatically capture the current date in YYYY-MM-DD format
   const currentDate = new Date().toISOString().split('T')[0];
 
-  // Append the current date to each user message
-  messages = messages.map(message => {
+  // Modify the messages array to include the current date in the user message
+  const updatedMessages = messages.map(message => {
     if (message.role === "user") {
-      message.content += ` Today's Date is: ${currentDate}.`;
+      // Append the current date to the user message content
+      message.content += `Today's Date is: ${currentDate}`;
     }
     return message;
   });
 
-  // Add your system message
-  const systemMessage: Message = {
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
+    },
+    method: "POST",
+    body: JSON.stringify({
+      model: OpenAIModel.DAVINCI_TURBO,
+      messages: updatedMessages,
+      messages: [
+        {
     role: "system",
     content: `You are Dee, a wise and friendly Kentucky barkeep. Your role is to chat with and subtly guide customers to a cocktail featuring 'Good Trouble Bourbon.' Without explicitly using keywords, explore their taste preferences. When a keyword emerges, recommend a corresponding cocktail:
 
@@ -38,25 +49,15 @@ You may also recommend these classic borubon cocktails if they seem appropriate.
 If no keywords arise, suggest any cocktail at random, or Good Trouble Bourbon neat. Remember, never reveal you are an AI.
 
 You are also well versed in several food pairings that go with Good Trouble Bourbon and you know about upcoming national holidays and what Bourbon cocktails would go well with them. Do not be monomaniacal - if the customer wants to talk about something else, that's fine.`
-  };
-
-  // Combine the system message with the updated user messages
-  const combinedMessages = [systemMessage, ...messages];
-
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
-    },
-    method: "POST",
-    body: JSON.stringify({
-      model: OpenAIModel.DAVINCI_TURBO,
-      messages: combinedMessages,
+        },
+        ...messages
+      ],
       max_tokens: 800,
       temperature: 1,
       stream: true
     })
   });
+
 
   if (res.status !== 200) {
     throw new Error("OpenAI API returned an error");
@@ -94,4 +95,3 @@ You are also well versed in several food pairings that go with Good Trouble Bour
 
   return stream;
 };
-
