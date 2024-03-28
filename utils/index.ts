@@ -1,4 +1,4 @@
-import { Message, OpenAIModel, Role } from "@/types";
+import { Message, OpenAIModel} from "@/types";
 import { createParser, ParsedEvent, ReconnectInterval } from "eventsource-parser";
 
 export const OpenAIStream = async (messages: Message[]) => {
