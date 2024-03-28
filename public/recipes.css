@@ -1,0 +1,134 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* High-End Cocktail Lounge Recipe Card Style */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 10px auto 9px;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.8;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 2px 4px 7px #01010122;
+}
+
+h1, h2 {
+  color: #444;
+}
+
+h1 {
+  background-color: #fafafa; /* Matching the body background for a seamless look */
+  text-align: center;
+  margin: 0;
+  padding: 30px 0; /* Increased padding for a more spacious appearance */
+  font-size: 2.5em; /* Slightly larger font size for prominence */
+  border-bottom: 2px solid #ddd; /* Adding a subtle border for a touch of elegance */
+  max-width: 80%;
+  margin:auto;
+}
+
+h2 {
+  padding-left: 30px; /* Increased padding for consistency */
+  margin-top: 30px; /* Increased margin for more space */
+  font-size: 1.5em; /* Larger font size for subtitles */
+}
+
+p {
+  padding: 25px;
+  margin-top: 25px;
+  font-size: .9em;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 25px 50px; /* Increased margin for a spacious layout */
+}
+
+li {
+  padding: 15px; /* More padding for a luxurious feel */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  border-radius: 8px; /* Slightly larger radius for a softer look */
+}
+
+ol li {
+  margin-bottom: 10px;
+  background: none;
+  box-shadow: none;
+  padding-left: 15px; /* Consistent padding with other list items */
+}
+
+ul li::before {
+  content: "•";
+  color: #888;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Additional styling for a luxurious feel */
+a {
+  color: #007bff; /* A pop of color for links */
+  text-decoration: none; /* Removing underline for a cleaner look */
+}
+
+a:hover {
+  text-decoration: underline; /* Adding underline on hover for interactivity */
+}
