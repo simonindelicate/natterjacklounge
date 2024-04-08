@@ -157,19 +157,42 @@ function getPageLink(whatBotSaid: string): string {
     return "/toddy.html";
   } else if (whatBotSaid === "Whiskey Sour") {
     return "/sour.html";
-      } else if (whatBotSaid === "Walk a Mile in My Stilettos") {
+  } else if (whatBotSaid === "Walk a Mile in My Stilettos") {
     return "/stilettos.html";
-      } else if (whatBotSaid === "Disagree to Agree") {
+  } else if (whatBotSaid === "Disagree to Agree") {
     return "/disagree.html";
-      } else if (whatBotSaid === "Common Ground") {
+  } else if (whatBotSaid === "Common Ground") {
     return "/common.html";
-      } else if (whatBotSaid === "Noble Embrace") {
+  } else if (whatBotSaid === "Noble Embrace") {
     return "/noble.html";
+  } else if (whatBotSaid === "GT Bliss Punch") {
+    return "/GTbliss.html";
+  } else if (whatBotSaid === "GT Manhattan") {
+    return "/GTManhattan.html";
+  } else if (whatBotSaid === "GT Maple Hot Toddy") {
+    return "/GTMapleHot.html";
+  } else if (whatBotSaid === "Troublemaker Sour") {
+    return "/TroublemakerSour.html";
+  } else if (whatBotSaid === "GT Fig & Rosemary Smash") {
+    return "/GTFig.html";
+  } else if (whatBotSaid === "GT Not Old Fashioned") {
+    return "/GTNotOld.html";
+  } else if (whatBotSaid === "Cha-Infused GT Martini") {
+    return "/Chai.html";
+  } else if (whatBotSaid === "Spiced Cranberry GT Punch") {
+    return "/Spiced.html";
+  } else if (whatBotSaid === "GT Gingerbread Flip") {
+    return "/Gingerbread.html";
+  } else if (whatBotSaid === "GT Smoked Maple Fizz") {
+    return "/GTMapleFizz.html";
+  } else if (whatBotSaid === "GT Highball") {
+    return "/GThighball.html";
   } else {
     // Default link if no match is found
     return "/default";
   }
 }
+
 
 useEffect(() => {
   const handleScroll = () => {

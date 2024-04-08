@@ -30,6 +30,28 @@ export const ChatMessage: FC<Props> = ({ message, containsGingerbread }) => {
         return "/common.html";
       case "noble embrace":
         return "/noble.html";
+      case "gt bliss punch":
+        return "/GTbliss.html";
+      case "gt manhattan":
+        return "/GTManhattan.html";
+      case "gt maple hot toddy":
+        return "/GTMapleHot.html";
+      case "troublemaker sour":
+        return "/TroublemakerSour.html";
+      case "gt fig & rosemary smash":
+        return "/GTFig.html";
+      case "gt not old fashioned":
+        return "/GTNotOld.html";
+      case "chai-infused gt martini":
+        return "/Chai.html";
+      case "spiced cranberry gt punch":
+        return "/Spiced.html";
+      case "gt gingerbread flip":
+        return "/Gingerbread.html";
+      case "gt smoked maple fizz":
+        return "/GTMapleFizz.html";
+      case "gt highball":
+        return "/GThighball.html";
       default:
         return "/default.html";
     }
@@ -48,6 +70,17 @@ export const ChatMessage: FC<Props> = ({ message, containsGingerbread }) => {
       "Walk a Mile in My Stilettos",
       "Common Ground",
       "Noble Embrace",
+      "GT Bliss Punch",
+      "GT Manhattan",
+      "GT Maple Hot Toddy",
+      "Troublemaker Sour",
+      "GT Fig & Rosemary Smash",
+      "GT Not Old Fashioned",
+      "Chai-Infused GT Martini",
+      "Spiced Cranberry GT Punch",
+      "GT Gingerbread Flip",
+      "GT Smoked Maple Fizz",
+      "GT Highball"
     ];
     let linkedContent = content;
 
