@@ -15,7 +15,7 @@ export const OpenAIStream = async (messages: Message[]) => {
     },
     method: "POST",
     body: JSON.stringify({
-      model: OpenAIModel.DAVINCI_TURBO,
+    model: "gpt-4o-mini", // Update this line to use GPT-4o-mini
       messages: [
         {
     role: "system",

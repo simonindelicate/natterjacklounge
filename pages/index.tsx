@@ -214,7 +214,7 @@ useEffect(() => {
     setMessages([
       {
         role: "assistant",
-        content: `Welcome to the Good Trouble Cocktail Lounge where we pour the finest of cocktails - all elevated with the rich flavours of our signature Good Trouble Bourbon - what are you in the mood for?`
+        content: `Welcome to the starlight lounge where we know the drinks you're looking for! How are you feeling today?`
       }
     ]);
   }, []);
@@ -223,7 +223,7 @@ useEffect(() => {
     <>
       <Head>
 
-        <title>The Good Trouble Cocktail Lounge</title>
+        <title>The Starlight lounge</title>
         <meta
           name="description"
           content="Pull up a stool."

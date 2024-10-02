@@ -5,7 +5,7 @@ export const AudioPlayer: FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    audioRef.current = new Audio("../music.mp3");
+    audioRef.current = new Audio("../suite.mp3");
     audioRef.current.loop = true;
   }, []);
 

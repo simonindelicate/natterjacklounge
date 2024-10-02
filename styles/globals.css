@@ -29,14 +29,14 @@
 
 body {
   background-color: #fefeff;
-  background-image: url('/images/bg.jpg');
+  background-image: url('/images/sfbg3.png');
   /* color: yellow; */
   padding: 0;
   margin: 0;
   font-family: "Courier New", monospace;
   text-align: center;
   background-size: cover;
-  background-blend-mode: luminosity;
+  /* background-blend-mode: luminosity; */
 }
 
 /* Set the font for the entire page */
@@ -245,17 +245,14 @@ font-family: 'Futura PT Book', cursive;
 }
 
 .navbar-top {
-	/*background-color: #f7ffed;
-
-  background-image: url('/navbar.png')*/
-  background-color: #fefefe;
-    color:#0d0e0e;
+  /* background-color: #f7ffed; */
+  /* background-image: url('/navbar.png'); */
+  background-color: #262c31;
+  color: #fc2d4f;
   font-family: 'FuturaCyrillicDemi', monospace;
   text-transform: uppercase;
-
   background-size: cover;
 }
-
 .footer-bottom {
   background: linear-gradient(to bottom, #333, #111);
   min-height:80px;
