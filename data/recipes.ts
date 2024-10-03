@@ -1,4 +1,16 @@
-export const recipes = [
+// data/recipes.ts
+
+interface Recipe {
+  name: string;
+  slug: string;
+  description: string;
+  ingredients: string[];
+  method: string;
+  garnish?: string;
+  glassware?: string; // Marked as optional
+}
+
+export const recipes: Recipe[] = [
   {
     name: "Stepping Stones",
     slug: "stepping-stones",
