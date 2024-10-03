@@ -1,0 +1,85 @@
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Wrap all styles under .recipePage to increase specificity */
+.recipePage {
+  font-family: 'Playfair Display', serif;
+  margin: 10px auto 9px;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.8;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 2px 4px 7px #01010122;
+}
+
+.recipePage h1,
+.recipePage h2 {
+  color: #444;
+}
+
+.recipePage h1 {
+  background-color: #fafafa;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  font-size: 2.5em;
+  border-bottom: 2px solid #ddd;
+  max-width: 80%;
+  margin: auto;
+}
+
+.recipePage h2 {
+  padding-left: 30px;
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+
+.recipePage p {
+  padding: 25px;
+  margin-top: 25px;
+  font-size: 0.9em;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+
+.recipePage ul,
+.recipePage ol {
+  list-style: none;
+  padding: 0;
+  margin: 25px 50px;
+}
+
+.recipePage li {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.recipePage ol li {
+  margin-bottom: 10px;
+  background: none;
+  box-shadow: none;
+  padding-left: 15px;
+}
+
+.recipePage ul li::before {
+  content: "•";
+  color: #888;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Additional styling for a luxurious feel */
+.recipePage a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recipePage a:hover {
+  text-decoration: underline;
+}
