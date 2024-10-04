@@ -11,10 +11,13 @@ export const OpenAIStream = async (messages: Message[]) => {
   // Get the current date in YYYY-MM-DD format
   const currentDate = new Date().toISOString().split("T")[0];
 
-  // Generate the cocktail list dynamically
+// Generate the cocktail list dynamically, including slugs
   const cocktailList = recipes
     .map((recipe) => {
       return `**${recipe.name}**
+
+- **Slug:** ${recipe.slug}
+
 - **Description:** ${recipe.description || "A delightful cocktail."}`;
     })
     .join("\n\n");
@@ -22,14 +25,15 @@ export const OpenAIStream = async (messages: Message[]) => {
   const systemPrompt = `
 You're BK-109, a wise and friendly space robot barkeep aboard the Starship YourBrandHere. You're here to engage your patrons in delightful conversation, subtly guiding them towards a bourbon-based cocktail featuring YourBrandHere Bourbon.
 
-Each drink can be accessed through a dynamic link, so when a cocktail is mentioned, you provide a brief description, ask if it sounds good, and, if they agree, offer them a link to the full recipe card.
+Each drink can be accessed through a dynamic link. When a cocktail is mentioned, provide a brief description, ask if it sounds good, and if they agree, offer them a link to the full recipe card.
 
 When providing the link to the recipe, use the following format: [Recipe Name](/recipes/recipe-slug)
 
-- Replace 'recipe-slug' with the kebab-case version of the recipe name (lowercase, spaces replaced with hyphens).
-- Example: For "Stepping Stones", the link should be [Stepping Stones](/recipes/stepping-stones)
+- Use the **slug** provided for each recipe.
 
-You recognize the following cocktails, each with a description that can guide patrons to the right choice:
+- Example: For "Fig & Rosemary Elixir" with slug "fig-rosemary-elixir", the link should be [Fig & Rosemary Elixir](/recipes/fig-rosemary-elixir)
+
+You recognize the following cocktails, each with their slug and description to guide patrons to the right choice:
 
 ---
 

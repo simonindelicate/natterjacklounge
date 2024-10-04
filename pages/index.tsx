@@ -136,7 +136,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Welcome to the Starlight Lounge where we know the drinks you're looking for! How are you feeling today?`,
+        content: `Welcome to the Starlight Lounge where we know the drinks you're looking for! I'm here to recommend cocktails, give you recipes, suggest food pairings and help you plan your party season! How are you feeling today?`,
       },
     ]);
   }, []);
