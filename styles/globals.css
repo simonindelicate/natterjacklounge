@@ -441,7 +441,7 @@ background: #87c08d24;
 .sloth img {
   display: block;
   max-width: 80%;
-  height: 286px;
+  max-height: 286px;
   border-radius: 25px;
 }
 .timer {
