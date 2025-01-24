@@ -6,12 +6,15 @@
   font-family: 'Playfair Display', serif;
   margin: 10px auto 9px;
   padding: 0;
+  background-image: url('/images/sfbg3.png');
+  background-position: center;
   background-color: #fafafa;
-  color: #333;
+  color: #000;
   line-height: 1.8;
   width: 600px;
   max-width: 90%;
   box-shadow: 2px 4px 7px #01010122;
+  font-weight: 700px;
 }
 
 .recipePage h1,
@@ -20,7 +23,7 @@
 }
 
 .recipePage h1 {
-  background-color: #fafafa;
+  background-color: #fff0;
   text-align: center;
   margin: 0;
   padding: 30px 0;
@@ -31,7 +34,7 @@
 }
 
 .recipePage h2 {
-  padding-left: 30px;
+  padding-left: 0px;
   margin-top: 30px;
   font-size: 1.5em;
 }
@@ -82,4 +85,71 @@
 
 .recipePage a:hover {
   text-decoration: underline;
+}
+
+.downloadButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background: #ece820; /* Nice deep green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 30px 0 30px 0;
+}
+
+.downloadButton:hover {
+  background: #595e3d;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.copyButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background: #ece820; /* Same as .downloadButton */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 30px 0 30px 0; /* Same spacing as .downloadButton */
+}
+
+.copyButton:hover {
+  background: #595e3d; /* Same hover effect */
+}
+
+.copySuccess {
+  text-align: center;
+  font-size: 14px;
+  color: green;
+  margin-top: 10px;
+}
+
+.rule {
+  width:50%;
+  margin: auto;
+  background-color: #333;
+  height: 2px;
+  margin-bottom:30px;
+}
+.logo {
+  width: 250px;
+  height: auto;
+  display: block;
+
+}
+.logoContainer {
+    width: 250px;
+    margin: 50px auto 0;
+  padding: 40px 0 0;
 }
