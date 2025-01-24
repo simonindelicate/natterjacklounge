@@ -11,192 +11,180 @@ interface Recipe {
 }
 
 export const recipes: Recipe[] = [
-  {
-    name: "Stepping Stones",
-    slug: "stepping-stones",
-    description: "A daring blend of bourbon with amaretto, lime, and cranberry, spiced with a dash of clove bitters.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
-      "25ml Amaretto",
-      "20ml Lime juice",
-      "30ml Cranberry juice",
-      "Dash of clove bitters",
-    ],
-    method: "Shake bourbon, amaretto, lime juice, and cranberry juice with ice. Strain into a glass with ice, and garnish with lime and cranberries.",
-    garnish: "Lime wedge and dried cranberries",
-  },
-  {
-    name: "Compromise in the Glass",
-    slug: "compromise-in-the-glass",
-    description: "A unifying combination of bourbon and cognac, balanced with lime and mint, a refreshing nod to classic charm.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "20ml Cognac",
-      "15ml Lime juice",
-      "Fresh mint leaves",
+    {
+    "name": "The Wild Rover",
+    "slug": "the-wild-rover",
+    "description": "A bold and adventurous take on the classic Old Fashioned, with Natterjack Irish Whiskey, honey, and a dash of smoked bitters.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
       "10ml Honey syrup",
+      "2 dashes smoked bitters"
     ],
-    method: "Muddle mint leaves with lime juice and honey syrup in a glass. Add bourbon, cognac, and ice. Stir gently and garnish with a mint sprig.",
-    garnish: "Mint sprig and lime wheel",
+    "method": "Stir Natterjack, honey syrup, and bitters with ice. Strain into a glass over a large ice cube and garnish with an orange twist.",
+    "garnish": "Orange twist"
   },
   {
-    name: "The Bridge Builder",
-    slug: "the-bridge-builder",
-    description: "A sociable spritz that brings bourbon and Aperol together with a touch of Moscato D’Asti for a bright, engaging experience.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "20ml Aperol",
-      "10ml Lemon juice",
-      "Moscato D'Asti to top",
-    ],
-    method: "Shake bourbon, Aperol, and lemon juice with ice. Strain into a glass, top with Moscato D'Asti, and garnish with a lemon twist and orange peel.",
-    garnish: "Lemon twist and orange peel",
-  },
-  {
-    name: "The Velvet Embrace",
-    slug: "the-velvet-embrace",
-    description: "A luxurious twist on the Old Fashioned, with rich notes of chocolate and bourbon. Smooth and decadent.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
-      "10ml Crème de Cocoa",
-      "2 dashes spiced chocolate bitters",
-    ],
-    method: "Stir bourbon, Crème de Cocoa, and bitters with ice. Strain into an Old Fashioned glass over a large ice cube, and garnish with an orange peel twist.",
-    garnish: "Orange peel twist",
-  },
-  {
-    name: "Peachy Keen Punch",
-    slug: "peachy-keen-punch",
-    description: "A delightful and refreshing peach bourbon punch. It’s summery and light, ideal for when you want something bright and crisp.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "20ml Peach liqueur",
-      "20ml Lemon juice",
-      "Club soda to top",
-    ],
-    method: "Shake bourbon, peach liqueur, and lemon juice with ice. Strain into a glass with ice, top with soda, and garnish with a peach slice and mint sprig.",
-    garnish: "Peach slice and mint sprig",
-  },
-  {
-    name: "The Pinnacle Manhattan",
-    slug: "the-pinnacle-manhattan",
-    description: "A robust, no-nonsense take on the classic Manhattan, allowing the bourbon's strength to shine through.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
-      "25ml Sweet vermouth",
-      "2 dashes aromatic bitters",
-    ],
-    method: "Stir bourbon, vermouth, and bitters with ice. Strain into a chilled glass and garnish with a cherry and orange twist.",
-    garnish: "Cherry and orange twist",
-  },
-  {
-    name: "Maple Hearth Toddy",
-    slug: "maple-hearth-toddy",
-    description: "A warm and comforting Hot Toddy with a smooth maple twist, perfect for cold nights.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "20ml Maple syrup",
-      "20ml Lemon juice",
-      "Hot water to top",
-    ],
-    method: "Mix bourbon, maple syrup, and lemon juice in a heatproof glass. Top with hot water, and garnish with a cinnamon stick and lemon slice.",
-    garnish: "Cinnamon stick and lemon slice",
-  },
-  {
-    name: "Rogue Sour",
-    slug: "rogue-sour",
-    description: "A rebellious take on the Whiskey Sour, with a perfect balance of sour and sweet.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
+    "name": "The Wayfarer",
+    "slug": "the-wayfarer",
+    "description": "A whiskey sour with a Natterjack twist, using ginger and clove to enhance its adventurous spirit.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
       "25ml Lemon juice",
       "20ml Honey syrup",
-      "Egg white (optional)",
+      "1 dash clove bitters",
+      "Egg white (optional)"
     ],
-    method: "Shake bourbon, lemon juice, honey syrup, and egg white with ice. Strain into a glass, and garnish with a lemon wedge and cherry.",
-    garnish: "Lemon wedge and cherry",
+    "method": "Shake all ingredients dry, then add ice and shake again. Strain into a glass and garnish with grated nutmeg and a lemon twist.",
+    "garnish": "Grated nutmeg and lemon twist"
   },
   {
-    name: "Fig & Rosemary Elixir",
-    slug: "fig-rosemary-elixir",
-    description: "A fruity and herbaceous bourbon cocktail with fig, honey, and rosemary. It’s sophisticated and rich with flavor.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
-      "20ml Fig liqueur",
+    "name": "The Natterjack Mule",
+    "slug": "natterjack-mule",
+    "description": "A lively and refreshing whiskey mule with the smooth depth of Natterjack and a sharp ginger kick.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
+      "15ml Lime juice",
       "10ml Honey syrup",
-      "Fresh rosemary sprig",
+      "Ginger beer to top"
     ],
-    method: "Muddle rosemary with honey syrup. Add bourbon and fig liqueur, shake with ice, and strain into a glass over ice. Garnish with a fig slice and rosemary.",
-    garnish: "Fig slice and rosemary",
+    "method": "Build in a glass over ice, stir gently, and garnish with fresh mint and a lime wheel.",
+    "garnish": "Mint sprig and lime wheel"
   },
   {
-    name: "Golden Hour Old Fashioned",
-    slug: "golden-hour-old-fashioned",
-    description: "A sweeter twist on the classic Old Fashioned, with orange bitters and a hint of sugar. Smooth, indulgent, and comforting.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
+    "name": "Follow the Toad",
+    "slug": "follow-the-toad",
+    "description": "A daring mix of Natterjack, coffee liqueur, and cream, bringing a smooth and velvety finish to a bold Irish classic.",
+    "ingredients": [
+      "40ml Natterjack Irish Whiskey",
+      "20ml Coffee liqueur",
+      "20ml Heavy cream",
+      "Freshly grated nutmeg"
+    ],
+    "method": "Shake Natterjack and coffee liqueur with ice, strain into a glass, then float the cream on top. Garnish with freshly grated nutmeg.",
+    "garnish": "Freshly grated nutmeg"
+  },
+  {
+    "name": "The Rebel’s Spritz",
+    "slug": "rebels-spritz",
+    "description": "A bright and unexpected blend of whiskey, elderflower, and sparkling wine for those who choose their own path.",
+    "ingredients": [
+      "40ml Natterjack Irish Whiskey",
+      "15ml Elderflower liqueur",
+      "10ml Lemon juice",
+      "Sparkling wine to top"
+    ],
+    "method": "Shake whiskey, elderflower liqueur, and lemon juice with ice. Strain into a glass and top with sparkling wine. Garnish with a lemon twist.",
+    "garnish": "Lemon twist"
+  },
+  {
+    "name": "The Roaming Toad",
+    "slug": "roaming-toad",
+    "description": "An Irish take on the classic Manhattan, where Natterjack’s boldness meets the deep richness of vermouth and bitters.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
+      "25ml Sweet vermouth",
+      "2 dashes aromatic bitters"
+    ],
+    "method": "Stir all ingredients with ice, strain into a chilled glass, and garnish with a cherry and an orange peel twist.",
+    "garnish": "Cherry and orange peel twist"
+  },
+  {
+    "name": "Toad in the Fog",
+    "slug": "toad-in-the-fog",
+    "description": "A warming and smoky hot toddy with Natterjack, honey, and spiced tea, perfect for cold evenings.",
+    "ingredients": [
+      "40ml Natterjack Irish Whiskey",
+      "20ml Honey syrup",
+      "Hot spiced tea to top",
+      "Lemon wedge"
+    ],
+    "method": "Mix Natterjack and honey in a heatproof glass, top with hot spiced tea, and stir. Garnish with a lemon wedge and a cinnamon stick.",
+    "garnish": "Lemon wedge and cinnamon stick"
+  },
+  {
+    "name": "The Wanderer’s Highball",
+    "slug": "wanderers-highball",
+    "description": "A no-nonsense whiskey highball with crisp apple and soda, letting Natterjack shine.",
+    "ingredients": [
+      "40ml Natterjack Irish Whiskey",
+      "Apple soda to top"
+    ],
+    "method": "Pour Natterjack over ice in a highball glass, top with apple soda, and garnish with a fresh apple slice.",
+    "garnish": "Apple slice"
+  },
+  {
+    "name": "Golden Horizon",
+    "slug": "golden-horizon",
+    "description": "A smooth and elegant whiskey cocktail with maple and vanilla, perfect for sipping as the sun sets.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
+      "10ml Maple syrup",
+      "10ml Vanilla liqueur",
+      "2 dashes orange bitters"
+    ],
+    "method": "Stir all ingredients with ice, strain into a glass over a large ice cube, and garnish with an orange peel twist.",
+    "garnish": "Orange peel twist"
+  },
+  {
+    "name": "The Irish Gold Rush",
+    "slug": "irish-gold-rush",
+    "description": "A bright and citrusy whiskey cocktail with honey and lemon, full of smooth richness and zest.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
+      "20ml Honey syrup",
+      "20ml Lemon juice"
+    ],
+    "method": "Shake all ingredients with ice, strain into a glass with fresh ice, and garnish with a lemon wheel and thyme sprig.",
+    "garnish": "Lemon wheel and thyme sprig"
+  },
+  {
+    "name": "Natterjack & Smoke",
+    "slug": "natterjack-smoke",
+    "description": "A bold and smoky twist on the Old Fashioned with a hint of peat and spice.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
+      "5ml Peated whiskey (for a smoky accent)",
       "10ml Simple syrup",
-      "2 dashes orange bitters",
+      "2 dashes smoked bitters"
     ],
-    method: "Stir bourbon, simple syrup, and bitters with ice. Strain into an Old Fashioned glass over ice, and garnish with an orange slice and cherry.",
-    garnish: "Orange slice and cherry",
+    "method": "Stir all ingredients with ice, strain into a glass over a large ice cube, and garnish with a smoked rosemary sprig.",
+    "garnish": "Smoked rosemary sprig"
   },
   {
-    name: "Chai Bourbon Martini",
-    slug: "chai-bourbon-martini",
-    description: "A bold, spiced martini that infuses bourbon with chai, for a warm and intriguing flavor profile.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
+    "name": "Toad in the Orchard",
+    "slug": "toad-in-the-orchard",
+    "description": "A crisp and autumnal whiskey cocktail with fresh apple, cinnamon, and a touch of honey.",
+    "ingredients": [
+      "40ml Natterjack Irish Whiskey",
+      "20ml Apple cider",
+      "10ml Honey syrup",
+      "Dash of cinnamon bitters"
+    ],
+    "method": "Shake all ingredients with ice, strain into a glass, and garnish with an apple slice and a cinnamon stick.",
+    "garnish": "Apple slice and cinnamon stick"
+  },
+  {
+    "name": "Chai & Toad",
+    "slug": "chai-and-toad",
+    "description": "A rich and spiced whiskey cocktail infused with the deep warmth of chai.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
       "20ml Chai-infused syrup",
-      "10ml Dry vermouth",
+      "10ml Sweet vermouth"
     ],
-    method: "Shake bourbon, chai syrup, and vermouth with ice. Strain into a martini glass, and garnish with a cinnamon stick.",
-    garnish: "Cinnamon stick",
+    "method": "Shake all ingredients with ice, strain into a glass, and garnish with a cinnamon stick.",
+    "garnish": "Cinnamon stick"
   },
   {
-    name: "Cranberry Spice Celebration",
-    slug: "cranberry-spice-celebration",
-    description: "A festive, fizzy bourbon punch with cranberry and sparkling wine—perfect for celebrations.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "20ml Cranberry juice",
-      "Sparkling wine to top",
+    "name": "The Midnight Leap",
+    "slug": "midnight-leap",
+    "description": "A dark and moody cocktail blending Natterjack with blackcurrant and a hint of anise.",
+    "ingredients": [
+      "50ml Natterjack Irish Whiskey",
+      "20ml Blackcurrant liqueur",
+      "5ml Absinthe rinse"
     ],
-    method: "Mix bourbon and cranberry juice in a glass with ice. Top with sparkling wine, and garnish with fresh cranberries and an orange slice.",
-    garnish: "Fresh cranberries and orange slice",
-  },
-  {
-    name: "Gingerbread Dreams",
-    slug: "gingerbread-dreams",
-    description: "A rich and comforting bourbon cocktail that captures the cozy, warm flavors of gingerbread. Perfect for those cold winter nights.",
-    ingredients: [
-      "50ml YourBrandHere Bourbon",
-      "10ml Gingerbread syrup",
-      "1 egg yolk",
-    ],
-    method: "Shake bourbon, gingerbread syrup, and egg yolk with ice. Strain into a glass, and garnish with ground nutmeg.",
-    garnish: "Ground nutmeg",
-  },
-  {
-    name: "Maple Smoke Fizz",
-    slug: "maple-smoke-fizz",
-    description: "An elegant and sophisticated bourbon cocktail with maple syrup and a hint of smoke, topped with soda for a refreshing fizz.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "15ml Maple syrup",
-      "Soda water to top",
-    ],
-    method: "Mix bourbon and maple syrup in a glass with ice. Top with soda water, and garnish with a smoked rosemary sprig.",
-    garnish: "Smoked rosemary sprig",
-  },
-  {
-    name: "Easy Breeze Highball",
-    slug: "easy-breeze-highball",
-    description: "A simple, laid-back bourbon highball with ginger ale. Perfect for casual sipping.",
-    ingredients: [
-      "40ml YourBrandHere Bourbon",
-      "Ginger ale to top",
-    ],
-    method: "Pour bourbon over ice in a highball glass, top with ginger ale, and garnish with a lemon twist.",
-    garnish: "Lemon twist",
+    "method": "Rinse the glass with absinthe, shake whiskey and blackcurrant liqueur with ice, strain, and garnish with a star anise pod.",
+    "garnish": "Star anise pod"
   },
 ];

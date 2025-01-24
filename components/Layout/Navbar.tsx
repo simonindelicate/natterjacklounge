@@ -11,7 +11,7 @@ export const Navbar: FC<NavbarProps> = ({ timer, formatTime }) => {
 <div className="flex flex-col space-y-4 items-center justify-center py-5 px-2 sm:px-8 navbar-top">
 
       <div className="font-bold text-5xl flex items-center site-branding">
-The Starfield Lounge
+The Natterjack Pub
 
       </div>
 

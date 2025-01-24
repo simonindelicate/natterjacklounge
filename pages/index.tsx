@@ -136,7 +136,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Welcome to the Starlight Lounge where we know the drinks you're looking for! I'm here to recommend cocktails, give you recipes, suggest food pairings and help you plan your party season! How are you feeling today?`,
+        content: `Welcome to the Natterjack - the Irish pub where all are welcome to take a seat by the fire and chat with me - the amphibian barkeep with a genius for mixology and an encyclopaedic knowledge of how to mix up a Natterjack cocktail. How are you today?`,
       },
     ]);
   }, []);

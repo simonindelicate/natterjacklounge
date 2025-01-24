@@ -37,3 +37,6 @@ next-env.d.ts
 
 /public/img
 components/Chat/messages.tsx
+
+# Local Netlify folder
+.netlify

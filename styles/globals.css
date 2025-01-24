@@ -48,6 +48,18 @@ a {
   color:red;
 }
  
+.user-color {
+  background-color: #ece822;
+}
+
+.natter-green {
+  background-color: #595e3d;
+}
+
+.natter-grey {
+  background-color: #231f20;
+}
+
 .adio-button {
   opacity:0.5;
 }
@@ -247,14 +259,14 @@ font-family: 'Futura PT Book', cursive;
 .navbar-top {
   /* background-color: #f7ffed; */
   /* background-image: url('/navbar.png'); */
-  background-color: #262c31;
-  color: #fc2d4f;
+  background-color: #231f20;
+  color: white;
   font-family: 'FuturaCyrillicDemi', monospace;
   text-transform: uppercase;
   background-size: cover;
 }
 .footer-bottom {
-  background: linear-gradient(to bottom, #333, #111);
+  background: linear-gradient(to bottom, #231f20, #231f20);
   min-height:80px;
 }
 
