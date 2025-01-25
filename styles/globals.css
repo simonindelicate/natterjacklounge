@@ -29,7 +29,8 @@
 
 body {
   background-color: #fefeff;
-  background-image: url('/images/sfbg3.png');
+  background-image: url('/images/yBARBACK.jpg');
+  background-position: center;
   /* color: yellow; */
   padding: 0;
   margin: 0;
@@ -203,7 +204,7 @@ input {
   margin: 25px;
   position: relative;
   z-index: 2;
-  margin-top: 1rem !important;
+  margin-top: -87px !important;
   width: 800px;
   max-width: 95%;
   margin: auto;
@@ -436,7 +437,8 @@ background: #87c08d24;
   max-width: 100%;
   display: flex;
   justify-content: center;
-    margin-top: 35px;
+  margin-top: 35px;
+  z-index: 3;
 }
 .sloth img {
   display: block;

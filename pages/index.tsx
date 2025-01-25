@@ -144,7 +144,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>The Starlight Lounge</title>
+        <title>The Natterjack Pub</title>
         <meta name="description" content="Pull up a stool." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="The YourBrandHere Cocktail Lounge" />
@@ -162,7 +162,7 @@ export default function Home() {
 
         <div className="flex flex-row overflow-auto sm:px-10 pb-4 sm:pb-10 chat-div">
           <div className="sloth">
-            <img src="images/logo300.png" />
+            <img src="images/TOAD_BARKEEP.png" />
           </div>
 
           <div className="chat-box">
