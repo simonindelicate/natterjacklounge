@@ -136,7 +136,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Welcome to the Natterjack - the Irish pub where all are welcome to take a seat by the fire and chat with me - the amphibian barkeep with a genius for mixology and an encyclopaedic knowledge of how to mix up a Natterjack cocktail. How are you today?`,
+        content: `Welcome to The Natterjack – your cozy Irish pub where the fire’s always warm, the craic is mighty, and the whiskey flows as smooth as good conversation. I’m your friendly bartoad, part sage, part mixologist, and fully stocked with an encyclopedic knowledge of Natterjack cocktails. Whether you're curious about how our whiskey is made, need the perfect drink for a party, or just fancy a bit of banter, pull up a stool and ask away. So, what’ll it be?`,
       },
     ]);
   }, []);
