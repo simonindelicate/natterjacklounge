@@ -136,26 +136,40 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Welcome to the Natterjack - the Irish pub where all are welcome to take a seat by the fire and chat with me - the amphibian barkeep with a genius for mixology and an encyclopaedic knowledge of how to mix up a Natterjack cocktail. How are you today?`,
+        content: `Welcome to The Natterjack – your cozy Irish pub where the fire’s always warm, the craic is mighty, and the whiskey flows as smooth as good conversation. I’m your friendly bartoad, part sage, part mixologist, and fully stocked with an encyclopedic knowledge of Natterjack cocktails. Whether you're curious about how our whiskey is made, need the perfect drink for a party, or just fancy a bit of banter, pull up a stool and ask away. So, what’ll it be?`,
       },
     ]);
   }, []);
 
   return (
     <>
-      <Head>
-        <title>The Natterjack Pub</title>
-        <meta name="description" content="Pull up a stool." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="The YourBrandHere Cocktail Lounge" />
-        <meta property="og:description" content="A prototype chatbot." />
-        <meta
-          property="og:image"
-          content="https://barkeep-prototype.vercel.app/images/de1.png"
-        />
-        <meta property="og:site_name" content="The YourBrandHere Cocktail Lounge" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+<head>
+  <title>The Natterjack Pub - A Chatbot-Driven Irish Cocktail Lounge</title>
+  <meta name="description" content="Step into The Natterjack Pub, the AI-powered Irish cocktail lounge where the amphibian barkeep serves up conversation and expert mixology. Pull up a stool and chat.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Natterjack Pub - AI-Powered Cocktail Lounge">
+  <meta property="og:description" content="Step into The Natterjack Pub, an AI-driven Irish cocktail experience where a toad barkeep mixes up drinks and banter. Pull up a stool and join the chat.">
+  <meta property="og:image" content="https://www.natterjackcocktails.com/images/TOAD_BARKEEP.png">
+  <meta property="og:url" content="https://www.natterjackcocktails.com">
+  <meta property="og:site_name" content="The Natterjack Pub">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Natterjack Pub - AI-Powered Cocktail Lounge">
+  <meta name="twitter:description" content="An AI-driven Irish pub where a toad barkeep mixes up conversation and cocktails. Step in, pull up a stool, and chat.">
+  <meta name="twitter:image" content="https://www.natterjackcocktails.com/images/TOAD_BARKEEP.png">
+  <meta name="twitter:site" content="@YourBrandHandle"> 
+
+  <!-- SEO Keywords -->
+  <meta name="keywords" content="Irish pub, AI chatbot, virtual bartender, mixology, whiskey cocktails, Irish whiskey, Natterjack Cocktails, cocktail lounge, AI-powered experience, interactive chatbot">
+  <meta name="author" content="Natterjack Cocktails">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+</head>
 
       <div className="flex flex-col h-screen">
         <Navbar timer={timer} formatTime={formatTime} />
