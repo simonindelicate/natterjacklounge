@@ -136,7 +136,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Welcome to The Natterjack – your cozy Irish pub where the fire’s always warm, the craic is mighty, and the whiskey flows as smooth as good conversation.  Whether you’re curious about how our whiskey is made, need the perfect recipe for a drink for a party, or just fancy a bit of banter, pull up a stool and ask me, your friendly bartoad. So, what’ll it be?`,
+        content: `Welcome to The Natterjack – your cozy Irish pub where the fire’s always warm, the craic is mighty, and the whiskey flows as smooth as good conversation.  Whether you’re curious about how our Natterjack Irish Whiskey is made, need the perfect recipe for a drink for a party, or just fancy a bit of banter, pull up a stool and ask me, your friendly bartoad. So, what’ll it be?`,
       },
     ]);
   }, []);
